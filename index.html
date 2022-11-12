@@ -1,0 +1,33 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Sarpanch:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="score-box">
+                <h3>HOME</h3>
+                <div id="home" class="score">0</div>
+                <div class="button-row">
+                    <div id="home-one" class="add-points" onclick="homeOne()">+ 1</div>
+                    <div id="home-two" class="add-points" onclick="homeTwo()">+2</div>
+                    <div id="home-three" class="add-points" onclick="homeThree()">+3</div>
+                </div>
+            </div>
+            <div id="reset" onclick="reset()"><button>reset</button></div>
+            <div class="score-box">
+                <h3>GUEST</h3>
+                <div id="guest" class="score">0</div>
+                <div class="button-row">
+                    <div id="guest-one" class="add-points" onclick="guestOne()">+ 1</div>
+                    <div id="guest-two" class="add-points" onclick="guestTwo()">+2</div>
+                    <div id="guest-three" class="add-points" onclick="guestThree()">+3</div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
